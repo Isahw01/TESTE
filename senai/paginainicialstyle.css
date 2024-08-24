@@ -1,0 +1,78 @@
+/* Reset básico para margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para a barra de menu */
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(16, 31, 98);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+/* Estilo para o logo */
+.menu-logo {
+    width: 70px;
+    height: 50px;
+
+}
+
+/* Contêiner da barra de pesquisa */
+.search-container {
+    position: relative; /* Permite posicionamento absoluto para os checkboxes */
+}
+
+/* Barra de pesquisa centralizada */
+.search-bar {
+    padding: 5px;
+    width: 600px; /* Define a largura da barra de pesquisa */
+    text-align: center; /* Centraliza o texto na barra de pesquisa */
+    height: 40px;
+}
+
+/* Estilo para os checkboxes escondidos inicialmente */
+.checkboxes {
+    display: none; /* Esconde os checkboxes por padrão */
+    position: absolute;
+    top: 35px; /* Ajusta a posição dos checkboxes em relação à barra de pesquisa */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+/* Estilos para os links do menu */
+.menu-links {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-link:hover {
+    color: #007bff; /* Cor de hover para os links */
+}
+
+/* Espaçamento superior para o conteúdo da página para não ficar atrás do menu fixo */
+.content {
+    margin-top: 60px;
+}

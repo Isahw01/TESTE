@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar</title>
+    <link rel="stylesheet" href="./paginainicialstyle.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <img src="./logo-branco-senai.png" class="menu-logo">
+        <div class="search-container">
+            <input type="text" placeholder="Pesquise o curso aqui..." class="search-bar" onclick="toggleCheckboxes()">
+            <div class="checkboxes">
+                <label><input type="checkbox"> Opção 1</label>
+                <label><input type="checkbox"> Opção 2</label>
+                <label><input type="checkbox"> Opção 3</label>
+            </div>
+        </div>
+        <div class="menu-links">
+            <a href="#" class="menu-link">Cadastro</a>
+            <a href="#" class="menu-link">Outro Link</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+    </div>
+
+    <script>
+        function toggleCheckboxes() {
+            const checkboxes = document.querySelector('.checkboxes');
+            checkboxes.style.display = checkboxes.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
